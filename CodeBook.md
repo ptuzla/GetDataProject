@@ -10,7 +10,7 @@ Details regarding the code used to load the data is located in the README.md mar
 
 Each set of feature variables are stored contiguously in the data set.  Six variables are stored in each set based on the mean and standard deviation of the values captured over the observed time period (i.e., the 'mean()' and 'std()' variables only) in the X, Y, and Z directions.  For example, the tBodyAcc feature is listed in the data set with the following six variables: tBodyAcc-mean()-X, tBodyAcc-mean()-Y, tBodyAcc-mean()-Z, tBodyAcc-std()-X, tBodyAcc-std()-Y, tBodyAcc-std()-Z.  In the Variable Details section, only the feature name will be listed for each set.  However, the magnitude-type variables are Euclidean norms and the X, Y, and Z directions do not apply.
 
-#### Variable Details
+### Variable Details
 dataset - Factor indicating if the observation originated in the test or training data set
 
 subject - Identifier of the subject associated with the observation

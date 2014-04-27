@@ -81,7 +81,7 @@ write.csv(tidyData, file="tidy_data.txt", row.names=FALSE)
 
 # prepare the second data set with averages of variables by subject and activity
 # For each subset of tidyData data frame, apply function then combine results into a data frame
-tidyDataMeans <- ddply(tidyData, c("subject","activityId"), function(x){
+tidyDataMeans <- ddply(tidyData, c("subject","activityId", "activity"), function(x){
     sub <- subset(x, select= 5:length(tidyData))
     apply(sub, 2, mean)
 })
