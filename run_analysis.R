@@ -28,8 +28,6 @@ if(!file.exists("./data")) {
     }
 }
 
-dataPath <- "data/UCI HAR Dataset/"
-
 
 
 # read the subject indicators
